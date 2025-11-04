@@ -1,0 +1,35 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build MusicViewer",
+            "type": "shell",
+            "command": "C:\\MusicViewer\\mingw64\\bin\\g++.exe",
+            "args": [
+                "-g",
+                "C:\\MusicViewer\\src\\main.cpp",
+                "C:\\MusicViewer\\src\\graphics.cpp",
+                "C:\\MusicViewer\\src\\audio.cpp",
+                "C:\\MusicViewer\\src\\algo.cpp",
+                "-IC:\\MusicViewer\\SFML\\include",
+                "-LC:\\MusicViewer\\SFML\\lib",
+                "-lsfml-graphics",
+                "-lsfml-window",
+                "-lsfml-audio",
+                "-lsfml-system",
+                "-lopengl32",
+                "-lgdi32",
+                "-lwinmm",
+                "-lws2_32",
+                "-mwindows",
+                "-o",
+                "C:\\MusicViewer\\MusicViewer.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}
